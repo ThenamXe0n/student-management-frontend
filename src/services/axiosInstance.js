@@ -1,7 +1,8 @@
 import axios from "axios";
-let token = localStorage.getItem("token");
+// let token = localStorage.getItem("token");
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:8080",
+  // baseURL: "http://localhost:8080",
+  baseURL: "https://student-management-backend-pxtb.onrender.com",
   // headers: {
   //   Authorization: `bearer ${token}`, //localstorage ya session storage se token share
   // },
