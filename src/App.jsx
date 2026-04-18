@@ -19,9 +19,20 @@ const App = () => {
           }
         />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage/>}/>
-        <Route path="/forget-password" element={<ForgetPasswordPage/>}/>
-        <Route path="/reset-password/:resetToken" element={<ResetPasswordPage/>}/>
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/forget-password" element={<ForgetPasswordPage />} />
+        <Route
+          path="/reset-password/:resetToken"
+          element={<ResetPasswordPage />}
+        />
+        <Route
+          path="*"
+          element={
+            <section className="h-screen w-screen bg-black flex items-center justify-center ">
+              404 not found!
+            </section>
+          }
+        />
       </Routes>
     </div>
   );
